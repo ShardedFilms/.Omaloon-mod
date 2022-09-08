@@ -19,7 +19,7 @@ public class OlPlanets{
             averageSurfaceTemperature = 2300;
             rad = 50;
             bloom = true;
-            accessible = false;
+            accessible = true;
             hasAtmosphere = true;
             meshLoader = () -> new SunMesh(
                     this, 4, 5, 0.3f, 1.0f, 1.2f, 1, 1.3f,
@@ -41,7 +41,7 @@ public class OlPlanets{
             meshLoader = () -> new MultiMesh(
                     new HexMesh(this, 6)
             );
-            allowSectorInvasion = false;
+            allowSectorInvasion = true;
             atmosphereColor = OlPal.OLDarkBlue;
             atmosphereRadIn = 0.02f;
             atmosphereRadOut = 0.3f;
@@ -49,7 +49,7 @@ public class OlPlanets{
             orbitRadius = 60f;
             startSector = 12;
             accessible = true;
-            alwaysUnlocked = false;
+            alwaysUnlocked = true;
             bloom = false;
             orbitTime = Mathf.pow(orbitRadius, 1.5f) * 960;
             ruleSetter = r -> {
